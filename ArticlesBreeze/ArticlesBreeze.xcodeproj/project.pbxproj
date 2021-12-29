@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		209A195D277B611000435AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A195C277B611000435AE6 /* AppDelegate.swift */; };
 		209A195F277B611000435AE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A195E277B611000435AE6 /* SceneDelegate.swift */; };
-		209A1961277B611000435AE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A1960277B611000435AE6 /* ViewController.swift */; };
 		209A1964277B611000435AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209A1962277B611000435AE6 /* Main.storyboard */; };
 		209A1967277B611000435AE6 /* ArticlesBreeze.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 209A1965277B611000435AE6 /* ArticlesBreeze.xcdatamodeld */; };
 		209A1969277B611200435AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209A1968277B611200435AE6 /* Assets.xcassets */; };
 		209A196C277B611200435AE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209A196A277B611200435AE6 /* LaunchScreen.storyboard */; };
 		209A1977277B611200435AE6 /* ArticlesBreezeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A1976277B611200435AE6 /* ArticlesBreezeTests.swift */; };
 		209A1982277B611200435AE6 /* ArticlesBreezeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A1981277B611200435AE6 /* ArticlesBreezeUITests.swift */; };
+		209A1A11277C89AC00435AE6 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A1A10277C89AC00435AE6 /* LoginTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		209A1959277B611000435AE6 /* ArticlesBreeze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArticlesBreeze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209A195C277B611000435AE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		209A195E277B611000435AE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		209A1960277B611000435AE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		209A1963277B611000435AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		209A1966277B611000435AE6 /* ArticlesBreeze.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArticlesBreeze.xcdatamodel; sourceTree = "<group>"; };
 		209A1968277B611200435AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		209A197D277B611200435AE6 /* ArticlesBreezeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArticlesBreezeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		209A1981277B611200435AE6 /* ArticlesBreezeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesBreezeUITests.swift; sourceTree = "<group>"; };
 		209A1983277B611200435AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209A1A10277C89AC00435AE6 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 			children = (
 				209A195C277B611000435AE6 /* AppDelegate.swift */,
 				209A195E277B611000435AE6 /* SceneDelegate.swift */,
-				209A1960277B611000435AE6 /* ViewController.swift */,
+				209A1A10277C89AC00435AE6 /* LoginTableViewController.swift */,
 				209A1962277B611000435AE6 /* Main.storyboard */,
 				209A1968277B611200435AE6 /* Assets.xcassets */,
 				209A196A277B611200435AE6 /* LaunchScreen.storyboard */,
@@ -261,8 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				209A1961277B611000435AE6 /* ViewController.swift in Sources */,
 				209A195D277B611000435AE6 /* AppDelegate.swift in Sources */,
+				209A1A11277C89AC00435AE6 /* LoginTableViewController.swift in Sources */,
 				209A195F277B611000435AE6 /* SceneDelegate.swift in Sources */,
 				209A1967277B611000435AE6 /* ArticlesBreeze.xcdatamodeld in Sources */,
 			);
@@ -442,6 +442,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ArticlesBreeze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ArticlesBreeze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
