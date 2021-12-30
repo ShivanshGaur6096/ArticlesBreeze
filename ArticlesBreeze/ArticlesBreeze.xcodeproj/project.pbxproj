@@ -16,6 +16,7 @@
 		209A1977277B611200435AE6 /* ArticlesBreezeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A1976277B611200435AE6 /* ArticlesBreezeTests.swift */; };
 		209A1982277B611200435AE6 /* ArticlesBreezeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A1981277B611200435AE6 /* ArticlesBreezeUITests.swift */; };
 		209A1A11277C89AC00435AE6 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A1A10277C89AC00435AE6 /* LoginTableViewController.swift */; };
+		209A1A19277DD3B800435AE6 /* SignupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A1A18277DD3B700435AE6 /* SignupTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		209A1981277B611200435AE6 /* ArticlesBreezeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesBreezeUITests.swift; sourceTree = "<group>"; };
 		209A1983277B611200435AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		209A1A10277C89AC00435AE6 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		209A1A18277DD3B700435AE6 /* SignupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +103,9 @@
 		209A195B277B611000435AE6 /* ArticlesBreeze */ = {
 			isa = PBXGroup;
 			children = (
+				209A1A1D277DD3CC00435AE6 /* Modules */,
 				209A195C277B611000435AE6 /* AppDelegate.swift */,
 				209A195E277B611000435AE6 /* SceneDelegate.swift */,
-				209A1A10277C89AC00435AE6 /* LoginTableViewController.swift */,
-				209A1962277B611000435AE6 /* Main.storyboard */,
 				209A1968277B611200435AE6 /* Assets.xcassets */,
 				209A196A277B611200435AE6 /* LaunchScreen.storyboard */,
 				209A196D277B611200435AE6 /* Info.plist */,
@@ -129,6 +130,80 @@
 				209A1983277B611200435AE6 /* Info.plist */,
 			);
 			path = ArticlesBreezeUITests;
+			sourceTree = "<group>";
+		};
+		209A1A1D277DD3CC00435AE6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				209A1A1F277DD3E000435AE6 /* SignupPage */,
+				209A1A1E277DD3D600435AE6 /* LoginPage */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		209A1A1E277DD3D600435AE6 /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				209A1A23277DD40D00435AE6 /* ViewModel */,
+				209A1A22277DD40500435AE6 /* View */,
+				209A1A20277DD3F200435AE6 /* Model */,
+			);
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		209A1A1F277DD3E000435AE6 /* SignupPage */ = {
+			isa = PBXGroup;
+			children = (
+				209A1A26277DD42800435AE6 /* ViewModel */,
+				209A1A25277DD42200435AE6 /* View */,
+				209A1A24277DD41D00435AE6 /* Model */,
+			);
+			path = SignupPage;
+			sourceTree = "<group>";
+		};
+		209A1A20277DD3F200435AE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		209A1A22277DD40500435AE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				209A1962277B611000435AE6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		209A1A23277DD40D00435AE6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				209A1A10277C89AC00435AE6 /* LoginTableViewController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		209A1A24277DD41D00435AE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		209A1A25277DD42200435AE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		209A1A26277DD42800435AE6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				209A1A18277DD3B700435AE6 /* SignupTableViewController.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +340,7 @@
 				209A1A11277C89AC00435AE6 /* LoginTableViewController.swift in Sources */,
 				209A195F277B611000435AE6 /* SceneDelegate.swift in Sources */,
 				209A1967277B611000435AE6 /* ArticlesBreeze.xcdatamodeld in Sources */,
+				209A1A19277DD3B800435AE6 /* SignupTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

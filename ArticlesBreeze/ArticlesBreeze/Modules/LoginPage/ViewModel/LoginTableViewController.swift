@@ -19,6 +19,16 @@ class LoginTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    // MARK: - Table view data source
+    @IBAction func loginBtn(_ sender: Any) {
+        print("Login btn Pressed")
+    }
+    
+    @IBAction func forgetPswd(_ sender: Any) {
+        print("Forget Password Btn Clicked")
+    }
+    
+    @IBAction func signUpNavigatin(_ sender: Any) {
+        print("SignUP Btn Pressed")
+    }
     
 }
